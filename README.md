@@ -1,4 +1,4 @@
-# Web Calculator App
+# Tic-Tac-Toe App
 
 This project is tic-tac-toe.  
 
