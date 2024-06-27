@@ -79,6 +79,10 @@ gameBoard = (
   }
 )();
 
+
+/*
+manages the css and display of the site
+*/
 displayManager = (
   function () {
     

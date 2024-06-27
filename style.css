@@ -1,11 +1,9 @@
-
 @font-face {
   font-family: "Playwrite DE Grund";
   src: url('assets/PlaywriteDEGrund-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
 }
-
 
 :root {
   --box-hover: #CCD5AE;
@@ -25,43 +23,32 @@
   margin: 0;
 }
 
-html, body{
-
+html, body {
   height: 100%;
   width: 100%;
-
   min-height: fit-content;
   min-width: fit-content;
 }
 
 html {
   position: relative;
-
   font-family: "Playwrite DE Grund", sans-serif;
-
 }
 
 body {
   background-color: var(--light-brown);
-
   min-height: 100vh;
   height: 100vh;
-
   padding: 40px;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
 }
 
 h1 {
-
   align-items: center;
   justify-content: center;
   text-align: center;
-
   font-size: 50px;
 }
 
@@ -69,7 +56,6 @@ h1 {
   width: 100%;
   margin-bottom: 20px;
   border-bottom: 5px solid var(--licorice);
-
 }
 
 .gameState {
@@ -81,45 +67,35 @@ h1 {
   font-size: 50px;
 }
 
-.board-wrapper{
+.board-wrapper {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
-
   padding-top: min(80px, 40%);
 }
+
 .gameboard {
   box-sizing: content-box;
-
   border: 5px solid var(--dark-brown);
   border-radius: 20px;
-
-  margin: 0px auto;
-  padding: 0px 0px;
-
+  margin: 0 auto;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   box-shadow: 0px 0px 10px;
-
   width: fit-content;
   height: fit-content;
-
 }
+
 .game-box {
   width: 150px;
   height: 150px;
-
   border-bottom: 4px solid var(--olive);
   border-right: 4px solid var(--olive);
-
   font-size: 90px;
   color: var(--text-fill);
   text-align: center;
-
   line-height: 150px;
-
   user-select: none;
 }
 
@@ -136,18 +112,18 @@ h1 {
   box-shadow: inset 0px 0px 20px var(--light-brown);
 }
 
-.game-box:hover:nth-child(1){
+.game-box:hover:nth-child(1) {
   border-top-left-radius: 15px;
 }
 
-.game-box:hover:nth-child(3){
+.game-box:hover:nth-child(3) {
   border-top-right-radius: 15px;
 }
 
-.game-box:hover:nth-child(9){
+.game-box:hover:nth-child(9) {
   border-bottom-right-radius: 15px;
 }
 
-.game-box:hover:nth-child(7){
+.game-box:hover:nth-child(7) {
   border-bottom-left-radius: 15px;
 }
